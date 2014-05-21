@@ -69,7 +69,7 @@ if game[2] != 'tbd'
 	texts = []
 	texts += ["Check out \"#{game[0]}\". It's metascore - #{game[1]}. Users score - #{game[2]}. It was released on #{game[3]}. #{game[4]}"]
 	texts += ["Another good game - \"#{game[0]}\" released on #{game[3]}. Metascore and userscore are - #{game[1]} and #{game[2]} respectively. #{game[4]}"]
-	texts += ["\"#{game[0]}\" is out. With #{game[1]} from critics and #{game[2]} from users. #{game[4]}"]
+	texts += ["\"#{game[0]}\" is out. With #{game[1]} points from critics and #{game[2]} from users. #{game[4]}"]
 	texts.shuffle.each do |t|
 		begin
 			post_tweet_wo_auth("#{creds["login"]}", "#{creds["password"]}", t)
